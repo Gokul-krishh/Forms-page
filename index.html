@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px 0px #252525;
+            border-radius: 10px;
+            width: 95%;
+            max-width: 225px;
+        }
+
+        #logo {
+            font-size: 25px;
+            font-weight: 700;
+            color: #252525;
+            text-align: center;
+            padding: 5px 0px;
+        }
+
+        form h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #252525;
+            padding: 0px;
+        }
+
+        .head-text {
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            color: #252525;
+        }
+
+        form label {
+            color: #252525;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+            padding: 5px 0px;
+        }
+
+        form input {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+        }
+
+        .pass {
+            padding-top: 5px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #008cff;
+        }
+
+        .check {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+            padding: 5px 0px;
+        }
+
+        .check span {
+            font-size: 13px;
+            font-weight: 500;
+            color: #252525;
+        }
+
+        .log-btn {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            background-color: #252525;
+            border-radius: 4px;
+            padding: 5px 0px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .choice {
+            color: #a59e9e;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            padding: 5px 0px;
+
+        }
+
+        .google-btn {
+            font-size: 16px;
+            font-weight: 400;
+            color: #EA4335;
+            background-color: #ccc;
+            border: 1px solid #a59e9e;
+            border-radius: 5px;
+            padding: 5px 0px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .change {
+            font-size: 13px;
+            font-weight: 700px;
+            color: #000;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        .change a {
+            color: #008cff;
+            text-decoration: none;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form id="login">
+            <p id="logo">
+                <i class="fa-brands fa-nfc-symbol"></i>
+            </p>
+
+            <h3 class="head-title">Welcome Back</h3>
+            <p class="head-text">Please Enter your Details to Login</p>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="user@gmail.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" required>
+
+            <p class="pass">Forgot password?</p>
+
+            <div class="check">
+                <input type="checkbox" required>
+                <span>Remember me</span>
+            </div>
+
+            <a href="#" class="log-btn">Login</a>
+
+            <p class="choice">OR</p>
+
+            <a href="#" class="google-btn">
+                <i class="fa-brands fa-google"></i>
+            </a>
+
+            <p class="change">Don't have an account?<a href="register.html">Register</a></p>
+
+        </form>
+    </div>
+</body>
+
+</html>
